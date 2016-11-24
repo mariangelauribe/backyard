@@ -1,0 +1,134 @@
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix{
+	display: table;
+}
+
+.clearfix:after{
+	content:" ";
+	clear:both;
+}
+
+header{
+	padding: 10px 0;
+}
+
+.menu{
+	float: right;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li{
+	display: inline-block;
+}
+
+.menu li a{
+	display: block;
+	padding: 15px 10px;
+	text-decoration: none;
+	color: black;
+}
+
+section{
+	background: #A4A4A4;
+	height: 100%;
+}
+
+.container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+.col-1, .col-2{
+	float: left;
+	box-sizing: border-box;
+	padding: 10px
+}
+
+.col-1{
+	width: 60%;
+}
+
+.col-2{
+	width: 40%;
+}
+
+.titulo, .parrafo{
+	color:white;
+	margin:40px 0;
+}
+
+h1{
+	font-size: 45px;
+}
+.formulario{
+	margin: 20px;
+	background: #BDBDBD;
+	border-radius: 15px;
+	padding: 1px;
+	text-align: center;
+	color: white;
+}
+
+.formulario input .formulario button{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.formulario button{
+	color:white;
+	background: #2E9AFE;
+	width: 75%;
+	border: 0;
+}
+
+.final{
+	color: black;
+}
+
+.final a{
+	text-decoration: none;
+	padding: 0 5px;
+}
+
+@media (max-width: 900px){
+	.container{
+		width: 700px;
+	}
+}
+
+@media( max-width: 700px){
+	.container{
+		width: 100%;
+	}
+	.col-1, .col-2{
+		width: 100%;
+	}
+	.formulario{
+		margin:0;
+	}
+}
+
+@media (max-width: 500px){
+	.logo{
+		width: 50%;
+	}
+	.menu{
+		width: 50%;
+	}
+}
+
+@media (max-width: 400px){
+	.logo{
+		width: 40%;
+	}
+	.menu{
+		width: 60%;
+	}
+}
